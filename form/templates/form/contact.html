@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      background-image: url('https://images.wallpaperscraft.com/image/blue_light_line_65813_1920x1080.jpg');
+    }
+    </style>
+<body>
+<div>
+    <h2>CONTACT US</h2>
+
+    <form method="post" action="/submit/">
+        {% csrf_token %}
+            <h3>Name:</h3>
+                {{form.name}}
+            <h3>Phone Number:</h3>
+                {{form.phone_number}}
+            <h3>Email:</h3>
+                {{form.email}}
+            <h3>Comments:</h3>
+                {{form.comments}}
+            <button , type="submit" , name="save">Create List</button>
+            </div>
+        </div>
+    </form>
+</div>
+    
+    
+</body>
+</html>
